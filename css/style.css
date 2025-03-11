@@ -97,7 +97,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url("Porto-Ardian/image/profile.png") no-repeat;
+  background: url("/image/profile1.png") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -145,7 +145,6 @@ section {
   width: 34.5rem;
   height: 5rem;
 }
-/* CSS untuk Fade-In Effect */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -265,9 +264,9 @@ span {
 .about-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Ubah ke flex-start agar konten tidak tumpang-tindih */
+  align-items: flex-start;
   gap: 4rem;
-  flex-wrap: wrap; /* Agar responsif di layar kecil */
+  flex-wrap: wrap;
 }
 
 .about-img {
@@ -434,43 +433,37 @@ span {
   font-size: 1.5rem;
   color: var(--main-color);
 }
-
-/* Style untuk content-box (untuk Coding Skill) */
 .skill-box .content-box {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Lebar penuh agar tidak rapat */
+  width: 100%; 
   height: 5rem;
-  margin-bottom: 1rem; /* Jarak antar item */
+  margin-bottom: 1rem;
 }
 
-/* Style untuk tombol (button) di Coding Skill */
+
 .skill-box .content-box .btn {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Lebar penuh */
+  width: 100%; 
   height: 100%;
-  background: transparent; /* Background transparan */
+  background: transparent; 
   border: 0.2rem solid var(--main-color);
   border-radius: 0.8rem;
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  color: var(--main-color); /* Warna teks sesuai main color */
+  color: var(--main-color); 
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
 }
-
-/* Efek hover pada tombol */
 .skill-box .content-box .btn:hover {
-  color: var(--bg-color); /* Warna teks berubah saat hover */
+  color: var(--bg-color);
 }
-
-/* Efek background saat hover */
 .skill-box .content-box .btn::before {
   content: "";
   position: absolute;
@@ -478,13 +471,13 @@ span {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--main-color); /* Warna background saat hover */
+  background: var(--main-color); 
   z-index: -1;
   transition: 0.5s;
 }
 
 .skill-box .content-box .btn:hover::before {
-  width: 100%; /* Background penuh saat hover */
+  width: 100%; 
 }
 
 .footer {
@@ -574,11 +567,18 @@ span {
   .about-container {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
   }
 
   .about-img {
     width: 20rem;
     height: 20rem;
+    margin-bottom: 2rem;
+    margin: 0 auto; 
+  }
+
+  .about-content {
+    text-align: center;
   }
 
   .about-content h3 {
@@ -598,6 +598,18 @@ span {
   .home-content h1 {
     display: flex;
     flex-direction: column;
+  }
+  .about-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .about-content h3 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
   }
 }
 
