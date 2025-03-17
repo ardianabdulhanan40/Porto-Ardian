@@ -300,7 +300,7 @@ span {
   margin-bottom: 1.5rem;
   color: var(--main-color);
   text-decoration: underline;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .about-content p {
@@ -573,7 +573,7 @@ span {
   .about-img {
     width: 20rem;
     height: 20rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin: 0 auto; 
   }
 
